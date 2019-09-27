@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Operación</title>
+</head>
+<body>
+<style>
+
+h1{
+    text-align: center;
+}
+
+#pie{
+    margin-top: 40%;
+    text-align: center;
+}
+
+#multiplicar{
+    margin-left: 25%;
+    
+}
+
+</style>
+
+    <h1 >Ejercicio de JavaScript</h1>
+    <script>
+           function multiplicar(){
+            m1 = document.getElementById("multiplicando").value;
+            m2 = document.getElementById("multiplicador").value;
+            r = m1*m2;
+             document.getElementById("resultado").value = r;
+}
+           
+        </script>
+
+
+              <form id="multiplicar">
+                <input type="number" id="multiplicando" value=0 onChange="multiplicar();"> X
+                <input type="number" id="multiplicador" value=0 onChange="multiplicar();"> =
+                <input type="number" id="resultado">
+              </form>
+
+        <footer id="pie">
+            Carrillo Sánchez Adelcky  IC51-M
+        </footer>
+</body>
+</html>
